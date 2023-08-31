@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons8-bat-32.ico" type="image/x-icon">
+    <title>Jhordy Store BETA</title>
+    <style>
+        body {
+           font-family: "Arial", sans-serif;
+           background: #121212;
+           color: #fff;
+           margin: 0;
+           padding: 0;
+       }
+
+       header {
+           text-align: center;
+           background-color: #1a1a1a;
+           padding: 20px;
+       }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: #000000;
+            color: #92a4ff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h2 {
+            background-color: #000;
+            color: #f4d805;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+   
+    h3 {
+        color: #f4d805; 
+        text-align: left; 
+        margin-left: 20px;
+        padding: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+ 
+</head>
+<body>
+    <header>
+        <h1>JHORDY STORE ¡PRÓXIMAMENTE!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="preferencias.html">Feliz Cumpleaños Jhordy</a> </li>
+                <li><a href="audiovisuales.html">Música de inspiración</a> </li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+           
+    </header>
+     
+    <div>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre" required minlength="3">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe aquí tu apellido" required minlength="3">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="Escribe tu mail" required>
+            <label for="pais">País:</label>
+            <select name="país" id="país">
+                <option value="Perú" selected="selected"  >Perú</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Chile">Chile</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Surinam">Surinam</option>
+                <option value="Guayana Francesa">Guayana Francesa</option>
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" placeholder="Escribe aquí tu comentario:" cols="30" rows="10"></textarea>
+
+            <label for="motivo">Motivo de contacto: </label>
+            <input type="radio" id="motivo" name="motivo"><i>Soy fan</i>
+            <input type="radio" id="motivo" name="motivo"><i>Quiero ropa</i>
+            <input type="radio" id="motivo" name="motivo"><i>Hola Deyvid</i>
+            <input type="radio" id="motivo" name="motivo"><i>Me confundí</i>
+            <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+
+            <input type="submit">
+        </form>
+    </div>
+   
+   
+     <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+     </footer>
+
+</body>
+</html>
